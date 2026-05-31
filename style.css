@@ -1,0 +1,455 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eaeded;
+}
+
+/* NAVBAR */
+
+.navbar{
+    background:#131921;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#ff9900;
+    cursor:pointer;
+}
+
+.search-box{
+    display:flex;
+    width:45%;
+}
+
+.search-box input{
+    width:100%;
+    padding:12px;
+    border:none;
+    outline:none;
+    border-radius:5px 0 0 5px;
+}
+
+.search-box button{
+    border:none;
+    background:#febd69;
+    padding:12px 18px;
+    cursor:pointer;
+    border-radius:0 5px 5px 0;
+}
+
+.nav-right{
+    display:flex;
+    gap:25px;
+    align-items:center;
+}
+
+.nav-right span{
+    font-weight:600;
+}
+
+.cart{
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+#cart-count{
+    background:red;
+    color:white;
+    padding:3px 8px;
+    border-radius:50%;
+    margin-left:5px;
+}
+
+/* HERO */
+
+.hero{
+    height:500px;
+    background:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.hero-content button{
+    padding:14px 30px;
+    border:none;
+    background:#ff9900;
+    color:white;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero-content button:hover{
+    background:#e68900;
+}
+
+/* SECTION TITLE */
+
+.section-title{
+    text-align:center;
+    margin-top:40px;
+}
+
+.section-title h2{
+    font-size:32px;
+    color:#232f3e;
+}
+
+/* DEALS */
+
+.deals{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+.deal-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:0.3s;
+}
+
+.deal-card:hover{
+    transform:translateY(-8px);
+}
+
+.deal-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.deal-card h3{
+    padding:15px;
+}
+
+.deal-card p{
+    padding:0 15px 15px;
+    color:#b12704;
+    font-weight:600;
+}
+
+/* CATEGORIES */
+
+.categories{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:40px;
+}
+
+.category{
+    background:white;
+    padding:15px 30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.category:hover{
+    background:#ff9900;
+    color:white;
+    transform:translateY(-5px);
+}
+
+/* PRODUCTS */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px 15px 5px;
+}
+
+.card p{
+    padding:0 15px;
+    color:#b12704;
+    font-weight:600;
+    font-size:18px;
+}
+
+.card button{
+    width:calc(100% - 30px);
+    margin:15px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#ffd814;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.card button:hover{
+    background:#f7ca00;
+}
+
+/* GAMING SECTION */
+
+.gaming-banner{
+    margin:40px;
+    border-radius:15px;
+    overflow:hidden;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600');
+    background-size:cover;
+    background-position:center;
+    height:350px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.gaming-banner h2{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.gaming-banner p{
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+.gaming-banner button{
+    padding:12px 25px;
+    border:none;
+    background:#ff9900;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* REVIEWS */
+
+.reviews{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.review{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.review p{
+    margin:15px 0;
+}
+
+/* PRIME */
+
+.prime{
+    text-align:center;
+    background:#232f3e;
+    color:white;
+    padding:60px 20px;
+}
+
+.prime h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.prime p{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.prime button{
+    padding:14px 30px;
+    border:none;
+    border-radius:8px;
+    background:#ff9900;
+    color:white;
+    cursor:pointer;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+    text-align:center;
+    padding:60px 20px;
+    background:white;
+}
+
+.newsletter h2{
+    margin-bottom:20px;
+}
+
+.newsletter input{
+    width:350px;
+    max-width:90%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+.newsletter button{
+    padding:12px 25px;
+    background:#ff9900;
+    border:none;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    margin-left:10px;
+}
+
+/* TOP BUTTON */
+
+#topBtn{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#ff9900;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    display:none;
+}
+
+/* FOOTER */
+
+footer{
+    background:#131921;
+    color:white;
+    margin-top:40px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    padding:50px;
+}
+
+.footer-grid h3{
+    margin-bottom:15px;
+}
+
+.footer-grid p{
+    margin:10px 0;
+    cursor:pointer;
+}
+
+.footer-grid p:hover{
+    text-decoration:underline;
+}
+
+.copyright{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .search-box{
+        width:100%;
+    }
+
+    .hero-content h1{
+        font-size:40px;
+    }
+
+    .gaming-banner h2{
+        font-size:35px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .hero{
+        height:400px;
+    }
+
+    .hero-content h1{
+        font-size:30px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .newsletter button{
+        margin-top:10px;
+        margin-left:0;
+    }
+
+}
